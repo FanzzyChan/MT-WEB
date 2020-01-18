@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>关于我们-美藤保罗</title>
+  <!-- Bootstrap -->
+  <link href="https://unpkg.com/swiper/css/swiper.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/non-responsive.css" rel="stylesheet">
+  <link href="css/my.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="mt_nav">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="imgs/logo.png">
+          </a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+            <li><a href="gdbl.html">高端保录</a></li>
+            <li><a href="zxcp.html">在线测评</a></li>
+            <li><a href="xglx.html">香港留学</a></li>
+            <li><a href="yglx.html">英国留学</a></li>
+            <li><a href="mglx.html">美国留学</a></li>
+            <li class="active"><a href="gywm.html">关于我们</a></li>
+            <li><a href="lxzx.html">留学资讯</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="olnum"> </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" id="lunbotu">
+    </div>
+  </div>
+  <div class="ab_1">
+    <div class="my_tit my_tit_type1">
+      <p class="bg">INTRODUCTION</p>
+      <p class="txt"><span>公司介绍</span></p>
+    </div>
+    <div class="cont" id="j-aboutus"></div>
+    <div class="list">
+      <div class="one">
+        <div class="icon"></div>
+        <p>高端留学</p>
+        <p>独家保录</p>
+      </div>
+      <div class="one">
+        <div class="icon"></div>
+        <p>特殊渠道</p>
+        <p>多年经验</p>
+      </div>
+      <div class="one">
+        <div class="icon"></div>
+        <p>名导名师</p>
+        <p>1 V 1服务</p>
+      </div>
+      <div class="one">
+        <div class="icon"></div>
+        <p>私人订制</p>
+        <p>全程无忧</p>
+      </div>
+    </div>
+  </div>
+  <div class="ab_2">
+    <div class="my_tit my_tit_type1">
+      <p class="bg">TEAM SHOW</p>
+      <p class="txt"><span>团队展示</span></p>
+    </div>
+    <!-- Swiper -->
+    <div class="myswiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper" id="j-swiper">
+          <!-- <div class="swiper-slide">
+            <div>
+              <div class="img j-img"><img src="imgs/img4.jpg"></div>
+              <h3>sdfsdf</h3>
+              <p>sdfsdf</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <div class="ab_3">
+    <div class="my_tit my_tit_type1">
+      <p class="bg">CONTACT US</p>
+      <p class="txt"><span>联系我们</span></p>
+    </div>
+    <img src="imgs/ab_img1.png">
+  </div>
+  <div class="footer">
+    <img src="imgs/footer_bg.png" class="bg">
+    <div class="list">
+      <div class="item">
+        <span class="ic"></span>
+        <h2>商务合作</h2>
+        <p>136 9170 9815</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>微博</h2>
+        <p><a href="https://weibo.com/u/7214874691?is_all=1" target="_blank">美藤保罗出国留学服务</a></p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>客服热线</h2>
+        <p>400-133-2088</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>公司地址</h2>
+        <p>深圳市福田区CBD</br>卓越世纪中心</p>
+      </div>
+      <div class="item">
+        <p style="margin-top: 0">微信公众号</p>
+        <img src="imgs/qr_code.png" class="qr">
+      </div>
+    </div>
+  </div>
+  <div class="fixed_bar">
+    <a href="#">在线测评</a>
+    <a href="#">在线客服</a>
+    <a href="#">400-133-2088</a>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+//轮播图
+$.ajax({
+  url: "http://mtedu.datongdiy.com/api/banners?pagesize=10&pageindex=1&columnid=7",
+  dataType: "json",
+  type: 'get',
+  success: function(resp) {
+    // console.log(resp.data)
+    let rData = resp.data
+    for (var i = 0; i < rData.length; i++) {
+      if (i == 0) {
+        $("#olnum").append("<li data-target='#carousel-example-generic' data-slide-to='0'  class='active'></li>")
+      } else {
+        $("#olnum").append("<li data-target='#carousel-example-generic' data-slide-to='" + i + "'></li>")
+      }
+    }
+    for (var i = 0; i < rData.length; i++) {
+      if (i == 0) {
+        $("#lunbotu").append("<div class='item active'>" +
+          "<img src='" + rData[i].images + "' alt='" + rData.title + "'>" +
+          "</div>");
+      } else {
+        $("#lunbotu").append("<div class='item'>" +
+          "<img src='" + rData[i].images + "' alt='" + rData.title + "'>" +
+          "</div>");
+      }
+    }
+  }
+});
+
+//获取团队列表
+$.ajax({
+  url: "http://mtedu.datongdiy.com/api/teams?pagesize=30&pageindex=1",
+  dataType: "json",
+  type: 'get',
+  success: function(resp) {
+    // console.log(resp)
+    let rData = resp.data
+
+    for (var i = 0; i < rData.length; i++) {
+      $("#j-swiper").append('<div class="swiper-slide"><div><div class="img j-img"><img src="' + rData[i].images + '"></div><h3>' + rData[i].name + '</h3><p><span>' + rData[i].position + '</span><span>' + rData[i].introduce + '</span></p></div></div>')
+
+      if (i == rData.length - 1) {
+        //初始化团队轮播器
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          autoplay: true,
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            init: function() {
+              //Swiper初始化了
+              let imgWidth = $(".swiper-slide").width();
+              console.log(imgWidth)
+              $(".j-img").css('height', imgWidth * 310 / 270);
+            },
+          },
+
+        });
+
+
+      }
+    }
+  }
+})
+//获取公司介绍
+$.ajax({
+  url: "http://mtedu.datongdiy.com/api/aboutus",
+  dataType: "json",
+  type: 'get',
+  success: function(resp) {
+    $("#j-aboutus").html(resp.data.content)
+  }
+})
+</script>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>在线测评-美藤保罗</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/non-responsive.css" rel="stylesheet">
+  <link href="css/my.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="mt_nav">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="imgs/logo.png">
+          </a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+            <li><a href="gdbl.html">高端保录</a></li>
+            <li class="active"><a href="zxcp.html">在线测评</a></li>
+            <li><a href="xglx.html">香港留学</a></li>
+            <li><a href="yglx.html">英国留学</a></li>
+            <li><a href="mglx.html">美国留学</a></li>
+            <li><a href="gywm.html">关于我们</a></li>
+            <li><a href="lxzx.html">留学资讯</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="olnum"></ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" id="lunbotu"></div>
+  </div>
+  <div class="zx_1 clearfix">
+    <div class="leftbar">
+      <h2>测试说明</h2>
+      <p>美藤保罗有专业的留学导师和名校归国的资深教授会根据您提供的个人信息，通过比对相关高等院校及专业的历年数据以及招生政策，针对性地分析并制作出属于你的私人定制版留学评估报告。为了提高评估报告的准确性，请一定如实填写。</p>
+      <h2>测试流程</h2>
+      <p class="icon">在线如实填写信息</p>
+      <p class="icon icon2">专业导师评估</p>
+    </div>
+    <div class="rigbar">
+      <h1>美藤保罗在线测评</h1>
+      <div class="zx_form">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="inputEmail3" class="control-label zx_inline">1、意向大学</label>
+            <div class="zx_inline ml10">
+              <input id="intention_school" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">2、留学计划</label>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="degree" value="1">
+                本科
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="degree" value="2">
+                硕士
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="degree" value="3">
+                博士
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="degree" value="4">
+                副学士
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">3、意向专业方向</label>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="major" value="1">
+                商科
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="major" value="2">
+                理工科
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="major" value="3">
+                设计
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="major" value="4">
+                社会学科
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="major" value="99">
+                其它
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">4、目前年级</label>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="grade" value="1">
+                高一
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="grade" value="2">
+                高二
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="grade" value="3">
+                高三
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="grade" value="4">
+                大三
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="grade" value="5">
+                大四
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="grade" value="99">
+                其它
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="control-label zx_inline">5、目前学校</label>
+            <div class="zx_inline ml10">
+              <input id="school" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">6、学校性质</label>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="nature" value="1">
+                公立
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="nature" value="2">
+                私立
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="nature" value="3">
+                国际
+              </label> </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">7、平均成绩<span style="font-weight: normal;">（选填）</span></label>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="score_type" value="1">
+                百分制
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="score_type" value="2">
+                GPA
+              </label>
+              <label class="radio-inline-txt radio-inline">成绩</label>
+               <label for="inputEmail3" class="control-label radio-inline" style="margin: 0;padding-left: 10px">
+                <input id="score" type="text" class="form-control" style="width: 140px;">
+              </label>            
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">8、英语成绩<span style="font-weight: normal;">（选填）</span></label>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="eng_score_type" value="1">
+                IELTS
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="eng_score_type" value="2">
+                TOEFL
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="eng_score_type" value="3">
+                CET-6
+              </label>
+              <label class="radio-inline-txt radio-inline">成绩</label>
+              <label for="inputEmail3" class="control-label radio-inline" style="margin: 0;padding-left: 10px">
+                <input id="eng_score" type="text" class="form-control" required="required" style="width: 140px;">
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">9、标化成绩</label>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="standard_score_type" value="1">
+                A-LEVEL
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="standard_score_type" value="2">
+                IB
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="standard_score_type" value="3">
+                SAT
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="standard_score_type" value="4">
+                ACT
+              </label>
+            </div>
+            <div class="radio">
+              <label class="radio-inline">
+                <input type="radio" name="standard_score_type" value="5">
+                GRE
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="standard_score_type" value="6">
+                GMAT
+              </label>
+              <label class="radio-inline-txt radio-inline">成绩</label>
+              <label for="inputEmail3" class="control-label radio-inline" style="margin: 0;padding-left: 10px">
+                <input id="standard_score" type="text" class="form-control" style="width: 140px;">
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="control-label zx_inline">10、姓名</label>
+            <div class="zx_inline ml10">
+              <input id="name" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="control-label zx_inline">11、联系方式</label>
+            <div class="zx_inline ml10">
+              <input id="tel" type="text" class="form-control" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="control-label zx_inline">12、邮箱</label>
+            <div class="zx_inline ml10">
+              <input id="email" type="text" class="form-control">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-default" id="submit">立即查看评估报告</button>
+        </form>
+      </div>
+    </div>
+    <h1 class="dec">TEST</h1>
+  </div>
+  <div class="footer">
+    <img src="imgs/footer_bg.png" class="bg">
+    <div class="list">
+      <div class="item">
+        <span class="ic"></span>
+        <h2>商务合作</h2>
+        <p>136 9170 9815</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>微博</h2>
+        <p><a href="https://weibo.com/u/7214874691?is_all=1" target="_blank">美藤保罗出国留学服务</a></p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>客服热线</h2>
+        <p>400-133-2088</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>公司地址</h2>
+        <p>深圳市福田区CBD</br>卓越世纪中心</p>
+      </div>
+      <div class="item">
+        <p style="margin-top: 0">微信公众号</p>
+        <img src="imgs/qr_code.png" class="qr">
+      </div>
+    </div>
+  </div>
+  <div class="fixed_bar">
+    <a href="#">在线测评</a>
+    <a href="#">在线客服</a>
+    <a href="#">400-133-2088</a>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+//轮播图
+$.ajax({
+  url: "http://mtedu.datongdiy.com/api/banners?pagesize=10&pageindex=1&columnid=3",
+  dataType: "json",
+  type: 'get',
+  success: function(resp) {
+    console.log(resp.data)
+    let rData = resp.data
+    for (var i = 0; i < rData.length; i++) {
+      if (i == 0) {
+        $("#olnum").append("<li data-target='#carousel-example-generic' data-slide-to='0'  class='active'></li>")
+      } else {
+        $("#olnum").append("<li data-target='#carousel-example-generic' data-slide-to='" + i + "'></li>")
+      }
+    }
+    for (var i = 0; i < rData.length; i++) {
+      if (i == 0) {
+        $("#lunbotu").append("<div class='item active'>" +
+          "<img src='" + rData[i].images + "' alt='" + rData.title + "'>" +
+          "</div>");
+      } else {
+        $("#lunbotu").append("<div class='item'>" +
+          "<img src='" + rData[i].images + "' alt='" + rData.title + "'>" +
+          "</div>");
+      }
+    }
+  }
+});
+// 表单提交
+$("#submit").on('click', function() {
+  let intention_school = $("#intention_school").val()
+  let school = $("#school").val()
+  let score = $("#score").val()
+  let eng_score = $("#eng_score").val()
+  let standard_score = $("#standard_score").val()
+  let name = $("#name").val()
+  let tel = $("#tel").val()
+  let email = $("#email").val()
+
+  let degree = $('input[name="degree"]:checked').val()
+  let major = $('input[name="major"]:checked').val()
+  let grade = $('input[name="grade"]:checked').val()
+  let nature = $('input[name="nature"]:checked').val()
+  let score_type = $('input[name="score_type"]:checked').val()
+  let eng_score_type = $('input[name="eng_score_type"]:checked').val()
+  let standard_score_type = $('input[name="standard_score_type"]:checked').val()
+
+  // 判断联系方式是否为空
+  if (tel == '') {
+      return;
+    }
+
+  // 判断input是否为空
+  // if (intention_school == '' || school == '' || score == '' || eng_score == '' || standard_score == '' || name == '' || tel == '' || email == '') {
+  //   return;
+  // }
+  // 判断选项是否为空
+  // if (degree == null || major == null || grade == null || nature == null || score_type == null || eng_score_type == null || standard_score_type == null) {
+  //   alert('选项不能为空！');
+  //   return false;
+  // }
+
+  $.ajax({
+    url: "http://mtedu.datongdiy.com/api/registration",
+    dataType: "json",
+    type: 'post',
+    data: {
+      intention_school: intention_school,
+      degree: degree,
+      major: major,
+      grade: grade,
+      school: school,
+      nature: nature,
+      score_type: score_type,
+      score: score,
+      eng_score_type: eng_score_type,
+      eng_score: eng_score,
+      standard_score_type: standard_score_type,
+      standard_score: standard_score,
+      name: name,
+      tel: tel,
+      email: email
+    },
+    success: function(resp) {
+      if (resp.code == 200) {
+        alert('我们的专业留学规划师会尽快和您联系，免费为您解惑。')
+        window.location.reload()
+      } else {
+        alert('请重试')
+      }
+    }
+  })
+  return false;
+})
+</script>
+
+</html>

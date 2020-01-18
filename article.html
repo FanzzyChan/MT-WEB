@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>资讯详情-美藤保罗</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/non-responsive.css" rel="stylesheet">
+  <link href="css/my.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="mt_nav">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="imgs/logo.png">
+          </a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+            <li><a href="gdbl.html">高端保录</a></li>
+            <li><a href="zxcp.html">在线测评</a></li>
+            <li><a href="xglx.html">香港留学</a></li>
+            <li><a href="yglx.html">英国留学</a></li>
+            <li><a href="mglx.html">美国留学</a></li>
+            <li><a href="gywm.html">关于我们</a></li>
+            <li class="active"><a href="lxzx.html">留学资讯</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="art_1">
+    <h1 class="tit">asdsfasdg</h1>
+    <p class="time">sdgsdg</p>
+    <img class="img" src="imgs/logo.png">
+    <div class="cont">sdgsdg</div>
+  </div>
+  <div class="fixed_bar">
+    <a href="zxcp.html">在线测评</a>
+    <a href="#">在线客服</a>
+    <a href="tel:400-133-2088">400-133-2088</a>
+  </div>
+
+  <div class="footer">
+    <img src="imgs/footer_bg.png" class="bg">
+    <div class="list">
+      <div class="item">
+        <span class="ic"></span>
+        <h2>商务合作</h2>
+        <p>136 9170 9815</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>微博</h2>
+        <p><a href="https://weibo.com/u/7214874691?is_all=1" target="_blank">美藤保罗出国留学服务</a></p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>客服热线</h2>
+        <p>400-133-2088</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>公司地址</h2>
+        <p>深圳市福田区CBD</br>卓越世纪中心</p>
+      </div>
+      <div class="item">
+        <p style="margin-top: 0">微信公众号</p>
+        <img src="imgs/qr_code.png" class="qr">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+//获取url中的参数  
+function getUrlParam(name) {
+  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象  
+  var r = window.location.search.substr(1).match(reg); //匹配目标参数   
+  if (r != null) return unescape(r[2]);
+  return null; //返回参数值  
+}
+
+var articleId = getUrlParam("id");
+
+$.ajax({
+  url: "http://mtedu.datongdiy.com/api/article/" + articleId,
+  dataType: "json",
+  type: 'get',
+  success: function(resp) { 
+    let rData = resp.data
+    $(".tit").text(rData.title)
+    $(".time").text(rData.publish_time + ' ' + rData.author)
+    $(".img").attr('src', rData.thumb)
+    $(".cont").html(rData.content)
+  }
+})
+</script>
+
+</html>

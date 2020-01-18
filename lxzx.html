@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>留学资讯-美藤保罗</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/non-responsive.css" rel="stylesheet">
+  <link href="css/my.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="mt_nav">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="imgs/logo.png">
+          </a>
+        </div>
+        <div id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+            <li><a href="gdbl.html">高端保录</a></li>
+            <li><a href="zxcp.html">在线测评</a></li>
+            <li><a href="xglx.html">香港留学</a></li>
+            <li><a href="yglx.html">英国留学</a></li>
+            <li><a href="mglx.html">美国留学</a></li>
+            <li><a href="gywm.html">关于我们</a></li>
+            <li class="active"><a href="lxzx.html">留学资讯</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="olnum"></ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" id="lunbotu"></div>
+  </div>
+  <div class="lx_1">
+    <div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist" id="mytab">
+        <li role="presentation" data-id="0" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">文章分类</a></li>
+        <li role="presentation" data-id="4"><a href="#hk" aria-controls="hk" role="tab" data-toggle="tab">香港留学</a></li>
+        <li role="presentation" data-id="6"><a href="#usa" aria-controls="usa" role="tab" data-toggle="tab">美国留学</a></li>
+        <li role="presentation" data-id="5"><a href="#uk" aria-controls="uk" role="tab" data-toggle="tab">英国留学</a></li>
+        <li role="presentation" data-id="99"><a href="#others" aria-controls="others" role="tab" data-toggle="tab">其他</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="all">
+          <!-- <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="imgs/img1.png">
+              </a>
+            </div>
+            <div class="media-body">
+              <a href="#" class="media-heading">中外合资的公司</a>
+              <p class="sub">2019.10.10 kiwi</p>
+              <p class="txt">美藤保罗岀国留学服务（深圳）有限公司是一家中外合资的公司，主控股为香港公司。公司高层均有从事出国留学服务五年以上的经验，服务全球范围的客户。截至2019年，我们已经输送约1.5万名中国境内优秀人才前往美国、加拿大、澳洲、香港、欧洲等国家留学深造。总公司于2000年进入留学移民行业，形成了一个朝气蓬勃，为所有年轻人提供良好的教育大平台。</p>
+            </div>
+          </div> -->
+        </div>
+        <div role="tabpanel" class="tab-pane" id="hk"></div>
+        <div role="tabpanel" class="tab-pane" id="usa"></div>
+        <div role="tabpanel" class="tab-pane" id="uk"></div>
+        <div role="tabpanel" class="tab-pane" id="others"></div>
+      </div>
+      <nav aria-label="Page navigation">
+        <ul class="pagination pagination-lg" id="pagination">
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="footer">
+    <img src="imgs/footer_bg.png" class="bg">
+    <div class="list">
+      <div class="item">
+        <span class="ic"></span>
+        <h2>商务合作</h2>
+        <p>136 9170 9815</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>微博</h2>
+        <p><a href="https://weibo.com/u/7214874691?is_all=1" target="_blank">美藤保罗出国留学服务</a></p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>客服热线</h2>
+        <p>400-133-2088</p>
+      </div>
+      <div class="item">
+        <span class="ic"></span>
+        <h2>公司地址</h2>
+        <p>深圳市福田区CBD</br>卓越世纪中心</p>
+      </div>
+      <div class="item">
+        <p style="margin-top: 0">微信公众号</p>
+        <img src="imgs/qr_code.png" class="qr">
+      </div>
+    </div>
+  </div>
+  <div class="fixed_bar">
+    <a href="#">在线测评</a>
+    <a href="#">在线客服</a>
+    <a href="#">400-133-2088</a>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-paginator.js"></script>
+<script>
+//轮播图
+$.ajax({
+  url: "http://mtedu.datongdiy.com/api/banners?pagesize=10&pageindex=1&columnid=8",
+  dataType: "json",
+  type: 'get',
+  success: function(resp) {
+    console.log(resp.data)
+    let rData = resp.data
+    for (var i = 0; i < rData.length; i++) {
+      if (i == 0) {
+        $("#olnum").append("<li data-target='#carousel-example-generic' data-slide-to='0'  class='active'></li>")
+      } else {
+        $("#olnum").append("<li data-target='#carousel-example-generic' data-slide-to='" + i + "'></li>")
+      }
+    }
+    for (var i = 0; i < rData.length; i++) {
+      if (i == 0) {
+        $("#lunbotu").append("<div class='item active'>" +
+          "<img src='" + rData[i].images + "' alt='" + rData.title + "'>" +
+          "</div>");
+      } else {
+        $("#lunbotu").append("<div class='item'>" +
+          "<img src='" + rData[i].images + "' alt='" + rData.title + "'>" +
+          "</div>");
+      }
+    }
+  }
+});
+
+var typeId = 0;
+var paneSelector = $("#all")
+var currentPage = 1
+var totalPages = 0
+var pageSize = 5
+
+$("#mytab li").on('click', function() {
+
+  console.log($(this).attr('data-id'))
+  currentPage = 1;
+  totalPages = 0
+
+  typeId = $(this).attr('data-id')
+
+  if (typeId == 0) {
+    paneSelector = $("#all")
+  } else if (typeId == 4) {
+    paneSelector = $("#hk")
+  } else if (typeId == 5) {
+    paneSelector = $("#uk")
+  } else if (typeId == 6) {
+    paneSelector = $("#usa")
+  } else if (typeId == 99) {
+    paneSelector = $("#others")
+  }
+  render()
+})
+
+function render() {
+  $.ajax({
+    url: "http://mtedu.datongdiy.com/api/articles?pagesize=" + pageSize + "&pageindex=" + currentPage + "&cateid=" + typeId,
+    dataType: "json",
+    type: 'get',
+    success: function(resp) {
+      console.log(resp)
+      paneSelector.empty()
+      let rData = resp.data.entities
+      totalPages = resp.data.pagination.totalRecord
+      // 循环新闻列表
+      for (let i = 0; i < rData.length; i++) {
+        let str = rData[i].publish_time
+
+        let linkType = rData[i].type
+        let link = ''
+        if (linkType == 1) {
+          link = 'article.html?id=' + rData[i].id
+        } else {
+          link = rData[i].url
+        }
+        paneSelector.append('<div class="media"><div class="media-left"><a href="' + link + '"><img class="media-object" src="' + rData[i].thumb + '"></a></div><div class="media-body"><a href="' + link + '" class="media-heading">' + rData[i].title + '</a><p class="sub">' + str.slice(0, 10) + ' ' + rData[i].author + '</p><p class="txt">' + rData[i].description + '</p></div></div>')
+      }
+      // 循环页码
+      setPage(currentPage, Math.ceil(totalPages / pageSize), render)
+    }
+  })
+}
+render()
+/**
+ *
+ * @param pageCurrent 当前所在页
+ * @param pageSum 总页数
+ * @param callback 调用ajax
+ */
+function setPage(pageCurrent, pageSum, callback) {
+  $(".pagination").bootstrapPaginator({
+    //设置版本号
+    bootstrapMajorVersion: 3,
+    // 显示第几页
+    currentPage: pageCurrent,
+    // 总页数
+    totalPages: pageSum,
+    //当单击操作按钮的时候, 执行该函数, 调用ajax渲染页面
+    onPageClicked: function(event, originalEvent, type, page) {
+      // 把当前点击的页码赋值给pageIndex, 调用ajax,渲染页面
+      currentPage = page
+      callback && callback()
+    }
+  })
+}
+</script>
+
+</html>
